@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.bootcss.com/fullPage.js/2.9.5/jquery.fullpage.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>HOME</title>
+</head>
+<body>
+    
+    <header>
+        <a href="./index.html"><img src="../img/index/main-logo.png" alt="" class="logo"></a>
+        <div class="navbar">
+            <button type="button" class="btn_hamburger">☰</button>
+            <nav> 
+                <ul>
+                    <li class="shop_dropdownlist"><a href="#" class="title"><span class="a">SHOP</span><span class="b">開始購物</span></a>
+                        <ol>
+                            <li><a href="./newin.html">NEW IN</a></li>
+                            <li><a href="./preview.html">PRE VIEW</a></li>
+                            <li><a href="./instock.html">IN STOCK</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="./collection.html" class="title"><span class="a">COLLECTION</span><span class="b">形象特輯</span></a></li>
+                    <li><a href="./contact.html" class="title"><span class="a">CONTACT</span><span class="b">聯絡我們</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <div id="fullpage">
+        <div class="section">
+            <div class="f1h">
+              <img src="../img/index/fg1.png" alt="#">
+              <div class="button_f1"> 
+                <a  href="./newin.html">SHOP NOW
+                </a>
+              </div>
+            </div>
+            <img class="fullpage_img1" src="../img/index/fullpage1.png" alt="">
+        </div>
+
+        <div class="section">
+            <div class="f2h">
+              <img src="../img/index/fg2.png" alt="#">
+              <div class="button_f2">
+                  <a href="./preview.html">CHECK NOW
+                  </a>
+              </div>
+            </div>
+            <img class="fullpage_img2" src="../img/index/fullpage2.png" alt="">
+        </div>
+
+        <div class="section">
+            <div class="f3h">
+                <img src="../img/index/fg3.png" alt="#">
+                <div class="button_f3">
+                  <a href="./instock.html">SHOP NOW
+                  </a>
+                </div>
+            </div>
+            <img class="fullpage_img3" src="../img/index/fullpage3.png" alt="">
+        </div>
+    </div>
+    
+
+
+    <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/fullPage.js/2.9.5/jquery.fullpage.js"></script>
+    <script src="./javascript/boostrap/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript">
+        $(function(){
+            $('#fullpage').fullpage();
+        });
+    </script>
+
+<script>
+    $("button.btn_hamburger").on("click", function(){
+    $(".navbar nav").slideToggle();
+    });
+</script>
+
+</body>
+</html>

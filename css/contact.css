@@ -1,0 +1,157 @@
+@import url(./common/common.css);
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+.banner1{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.wrapper{
+	display: flex; 
+	flex-wrap: wrap;
+	justify-content: center;
+    align-items: center; 
+    /* margin: 0 auto; */
+}
+
+.map{
+    padding-top: 20px;
+	padding-right: 50px;
+}
+
+.info{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.info h2{
+	font-size: 14px;
+    padding-bottom: 10px;
+	text-align: center;
+}
+
+.info span{
+	font-size: 13px;
+	margin-right: 6px;
+}
+
+/* form */
+
+
+.main{
+	background-color: #fff;
+	padding-top: 20px;
+	/* display: block;
+	margin: 0 auto; */
+}
+
+.main ul{
+	width: 100%;
+	margin: 0 auto ;
+}
+
+.main li{
+	margin-bottom: 10px;
+}
+
+.main p{
+	color: #999;
+	font-size: 14px;
+}
+
+
+/* input form */
+
+.main .name{
+	width: 250px;
+	height: 25px;
+	border: 1px solid #ccc;
+	padding-left: 5px;
+	outline: 0; 
+}
+
+.main .phone{
+	width: 250px;
+	height: 25px;
+	border: 1px solid #ccc;
+	padding-left: 5px;
+	outline: 0; 
+}
+
+.main .email{
+	width: 250px;
+	height: 25px;
+	border: 1px solid #ccc;
+	padding-left: 5px;
+	outline: 0; 
+}
+
+.main textarea{
+	width: 250px;
+	height: 180px;
+	border: 1px solid #ccc;
+	padding: 5px;
+	outline: 0; 
+	background-color: #f6f6f6;
+	margin-bottom: 20px;
+}
+
+.main .send{
+	width: 100px;
+	height: 30px;
+	font-size: 14px;
+	background-color: #67696e;
+	color: white;
+	border: 0;
+	display: block;
+	margin: 0 auto;
+}
+
+
+@media screen and (max-width: 575.98px){
+    div.wrapper{
+      width: 100%;
+       margin: 0 auto; /*有了這個header banner就會在正確的位置 但img會跑位 */
+    }
+    .main{
+		padding: 0px;
+	}
+	.map{
+		padding: 0;
+	}
+  }
+  
+   @media screen and (min-width: 375px) and (max-width: 767.98px){
+    div.wrapper{
+      width: 540px;
+	  margin: 0 auto;
+    }
+	.main{
+		padding: 0px;
+	}
+
+  } 
+  @media screen and (min-width: 768px) and (max-width: 1023.98px){
+    div.wrapper{
+      width: 720px;
+    }
+	.main{
+		padding: 0px;
+	}
+  } 
+   @media screen and (min-width: 1024px) and (max-width: 1279.98px){
+    div.wrap{er
+      width: 960px;
+    }
+  } 

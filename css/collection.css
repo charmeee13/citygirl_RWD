@@ -1,0 +1,404 @@
+@import url(./common/common.css);
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+/* .header{
+    display: fixed;
+} */
+
+
+.collection_demoleft{
+    /* justify-content: center;
+    align-items: center; */
+    width: 1200px;
+    margin:0 auto;
+}
+
+.collection_demo{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+/* @media screen and (max-width:600px) {
+
+    .collection_demo{
+        flex-direction: column;
+    }
+      
+  } */
+
+
+/*VOL hover效果*/
+.img_group{
+    position: relative;
+}
+
+.img_top{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+
+    font-size: 40px;
+    color: #000;
+    display: none;
+}
+
+.img_group:hover .img_top{
+    display: block;
+    z-index: -1;
+}
+
+/* 深入淺出 模糊hover */
+.collection_demo .move img{
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.collection_demo .move img:hover{
+    opacity: 0.5;
+    -webkit-filter:blur(1px);
+}  
+
+/* .collection_demo .move span {
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.collection_demo .move span:hover{
+    opacity: 0.5;
+    -webkit-filter:blur(1px);
+}  */
+
+/* .img_group{
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.img_group:hover{
+    opacity: 0.5;
+    -webkit-filter:blur(1px);
+} */
+
+/* end */
+
+
+
+.collection_demo img{
+    /* display: block;
+    text-align: center; */
+    width: 400px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px; 
+}
+
+
+
+.banner1 img{
+    width: 100%;
+	height: auto;
+	display: block;
+    padding-bottom: 30px;
+}
+
+.banner2 img{
+    width: 100%;
+	height: auto;
+	display: block;
+}
+
+.banner3 img{
+    width: 100%;
+	height: auto;
+	display: block;
+}
+
+.banner4 img{
+    width: 100%;
+	height: auto;
+	display: block;
+}
+
+.banner5 img{
+    width: 100%;
+	height: auto;
+	display: block;
+}
+
+.banner6 img{
+    width: 100%;
+	height: auto;
+	display: block;
+}
+
+.banner7 img{
+    width: 100%;
+	height: auto;
+	display: block;
+}
+
+.banner8 img{
+    width: 100%;
+	height: auto;
+	display: block;
+}
+
+.banner9 img{
+    width: 100%;
+	height: auto;
+	display: block;
+}
+
+
+
+
+.banner1{ 
+    /* position: absolute; */
+}
+
+.section a{
+    position: relative;
+} 
+
+.f1{
+    font-size: 16px;
+    color: aliceblue;
+    left:940px;
+    top:180px;
+    text-decoration: none;
+    border: 0px solid;
+    border: 6px solid rgb(79, 150, 209);
+    background-color: rgb(79, 150, 209);
+    border-radius: 10px;
+}
+
+/* 按鈕的hover效果 */
+
+
+@keyframes swing{
+    15%{transform: translateX(5px);} 
+    40%{transform: translateX(-5px);}
+    65%{transform: translateX(2px);}
+    85%{transform: translateX(-2px);}
+    100%{transform: translateX(0px);}
+}
+
+.f1h{
+    transition: 0.5s;
+}
+
+.f1h:hover{
+    animation: swing 1s 1;
+}
+
+/* grid共用 */
+.grid-item {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+  }
+  .grid-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+  }
+
+  .grid-item:nth-child(1){
+      grid-area: a;
+
+  }
+
+  .grid-item:nth-child(2){
+    grid-area: b;
+      
+}
+
+.grid-item:nth-child(3){
+    grid-area: c;
+      
+}
+
+.grid-item:nth-child(4){
+    grid-area: d;
+      
+}
+
+.grid-item:nth-child(5){
+    grid-area: e;
+      
+}
+
+.grid-item:nth-child(6){
+    grid-area: f;
+      
+}
+/* banner2 grid */
+
+.banner2 .grid-container {
+    display: grid;
+    width: 1000px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "a a b" 
+    "c c c" 
+    "d e f";
+    
+    padding: 30px;
+    gap: 50px;
+  }
+
+  @media screen and (max-width:600px) {
+
+    .banner2 .grid-container {
+       
+        grid-template-areas:
+        "a  b" 
+        "c  c" 
+        "d  e ";
+      }
+
+      .grid-item {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+      }
+      
+  }
+  
+
+
+/* banner3 grid */
+
+.banner3 .grid-container {
+    width: 1000px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "a b c" 
+    "d d d" ;
+    
+    padding: 30px;
+    gap: 50px;
+  }
+  
+/* banner4 grid */
+
+.banner4 .grid-container {
+    width: 1000px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "a a a" 
+    "b c d" ;
+    
+    padding: 30px;
+    gap: 50px;
+  }
+  
+
+/* banner5 grid */
+
+.banner5 .grid-container {
+    width: 1000px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "a b c" 
+    "d e e"
+    "f g h" ;
+    
+    padding: 30px;
+    gap: 50px;
+  }
+  
+
+/* banner6 grid */
+
+.banner6 .grid-container {
+    width: 1000px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "a b b" ;
+    
+    padding: 30px;
+    gap: 50px;
+  }
+  
+
+/* banner7 grid */
+
+.banner7 .grid-container {
+    width: 1000px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "a b b" 
+    "c d e"
+    "f f g" ;
+    
+    padding: 30px;
+    gap: 50px;
+  }
+
+
+/* banner8 grid */
+
+.banner8 .grid-container {
+    width: 1000px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "a a b" 
+    "c d e" ;
+    
+    padding: 30px;
+    gap: 50px;
+  }
+  
+
+/* banner9 grid */
+
+.banner9 .grid-container {
+    width: 1000px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "a b c" 
+    "d d e" ;
+    
+    padding: 30px;
+    gap: 50px;
+  }
+  

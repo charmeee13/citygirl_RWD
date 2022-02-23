@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contact.css">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>CONTACT</title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img src="../img/index/main-logo.png" alt="" class="logo"></a>
+        <div class="navbar">
+            <button type="button" class="btn_hamburger">☰</button>
+            <nav> 
+                <ul>
+                    <li class="shop_dropdownlist"><a href="#" class="title"><span class="a">SHOP</span><span class="b">開始購物</span></a>
+                        <ol>
+                            <li><a href="./newin.html">NEW IN</a></li>
+                            <li><a href="./preview.html">PRE VIEW</a></li>
+                            <li><a href="./instock.html">IN STOCK</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="./collection.html" class="title"><span class="a">COLLECTION</span><span class="b">形象特輯</span></a></li>
+                    <li><a href="./contact.html" class="title"><span class="a">CONTACT</span><span class="b">聯絡我們</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+        <img class="banner1" src="../img/contact/banner1.png" alt="">
+
+        <div class="wrapper">
+                <!-- 地圖資料 -->
+               <section>
+                    <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4676870453154!2d121.54106421423883!3d25.05213284371994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abddfa4b02ab%3A0x7b0d48826d60cad0!2zMTA05Y-w5YyX5biC5Lit5bGx5Y2A5Y2X5Lqs5p2x6Lev5LiJ5q61MjE56JmfNeaokw!5e0!3m2!1szh-TW!2stw!4v1644158750657!5m2!1szh-TW!2stw"
+                    width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                    <div class="info">
+                    <h2><span  class="material-icons">location_on</span>台北市中山區南京東路三段219號5樓</h2>
+                    <h2><span  class="material-icons">email</span>citygirl@gmail.com</h2>
+                    <h2><span  class="material-icons">call</span>(02)1989-1331</h2>
+                </div>
+              </section>
+              <!-- form -->
+              <section>
+                <div class="main">
+                  <ul>
+                    <li>
+                      <p>Name</p>
+                      <input class="name" type="text" />
+                    </li>
+                    <li>
+                      <p>Phone</p>
+                      <input class="phone" type="text" />
+                    </li>
+                    <li>
+                      <p>Email</p>
+                      <input class="email" type="text" />
+                    </li>
+                    <li>
+                      <p>Message</p>
+                      <textarea></textarea>
+                    </li>
+                    <li>
+                      <input class="send" type="submit" value="Send" />
+                    </li>
+            
+                  </ul>
+                </div>
+              </section>
+          </div>  
+
+        
+        <footer>
+          <div class=footer>
+              <div class="icon_spot">
+                  <h3>More Information</h3>
+                  <a href=""><i class="fab fa-facebook"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-youtube"></i></a>
+              </div>
+
+              <p>本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，<br>
+                  本平台僅供學習、展示之用。若有侵權疑慮，<br>
+                  您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理。</p>
+          </div>
+          
+        </footer>
+    </div>
+
+    <script>
+        $("button.btn_hamburger").on("click", function(){
+        $(".navbar nav").slideToggle();
+        });
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+@import url(./common/common.css);
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.spot{
+    margin-left: 25px;
+
+}
+
+.wrap{
+    width: 1200px;
+    display: flex; 
+	justify-content: center;
+    align-items: center; 
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+.wrap img{
+    height: 400px;
+}
+
+
+h1{
+    font-size: 24px;
+    padding-bottom: 20px; 
+    text-align: center;
+}
+
+h3{
+    font-size: 20px;
+}
+
+
+
+p{
+    padding-bottom: 30px;
+    line-height: 1.6;
+}
+
+
+.button .b_1{
+    text-decoration: none;
+    color: #fff;
+    background-color: #67696e;;
+    display: inline-block;
+    width: 180px;
+    line-height: 50px;
+    font-size: 18px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.button .b_2{
+    text-decoration: none;
+    color: #585858;
+    background-color: #f1ecec;
+    display: inline-block;
+    width: 180px;
+    line-height: 50px;
+    font-size: 18px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.p_qty{
+    display: flex;
+    padding-bottom: 20px;
+    padding-left: 60px;
+}
+
+.qty{
+    display: flex;
+	justify-content: center;
+    align-items: center; 
+
+    padding-left: 20px;
+}
+
+.qty a{
+    text-decoration: none;
+    font-size: 30px;
+    width: 30px;
+    height: 20px;
+    background-color:  #f6f6f6;
+    border: #e5e7eb solid 1px;
+    /* display: block; 
+	text-align: center; */
+
+    /* display:inline-block;
+    text-align: center;  */
+
+    display: flex;
+	justify-content: center;
+    align-items: center; 
+
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.button .b_1{
+    margin-right: 10px;
+}
+
+.button .b_1:hover{
+    background-color: #4e4848;   
+    color: rgb(255, 255, 255);
+} 
+
+.button .b_2:hover{
+    background-color: #67696e;   
+    color: rgb(255, 255, 255);
+} 
+
+
+/* slick */
+
+button.slick-prev .slick-arrow{
+    display: none !important;
+}
+
+button.slick-next.slick-arrow{
+    display: none !important;
+}
+
+.productdemo_sliders li img{
+    height: 300px;
+}
+
+
+.productdemo_sliders a{
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center; 
+}
+
+.productdemo_sliders li h2{
+    padding-top: 15px;
+    padding-bottom: 30px;
+    padding-right: 20px; 
+    
+}
+
+/* slick end */
+
+/* 淡入深出hover */
+.productdemo_sliders img{
+    transition: 0.5s;
+    opacity: 0.8;
+}
+
+.productdemo_sliders img:hover{
+    opacity: 1;
+}
+
