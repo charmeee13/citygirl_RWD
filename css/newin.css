@@ -125,13 +125,13 @@ nav ul > li:nth-child(4n){
         margin-right: 0;
     }
 
+    .productdemo li a{
+        padding-left: 0px;
+    }
 
     footer p{
-        font-size: 3px;
+        font-size: 10px;
         line-height: 1.2;
-        color: #000;
-        text-align: center;
-        padding-bottom: 20px; 
     }
   }
 
