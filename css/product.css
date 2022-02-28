@@ -137,7 +137,6 @@ button.slick-next.slick-arrow{
 
 .img_wrap{
     padding:5px;
-    position: relative;
 }
 .productdemo_sliders li img{
     height: 300px;
@@ -173,48 +172,103 @@ button.slick-next.slick-arrow{
     opacity: 1;
 }
 
+
+.p_img{
+    width: 280px;
+    height: 400px;
+}
+
+.spot{
+    width: 400px;
+    height: 397px;
+}
+
+
+
 @media screen and  (max-width: 1279.98px){
-    div.wrapper{
+    div.wrap{
       width: 960px;
 	  margin: 0 auto;
+    }
+    div.p_img{
+        margin: 0 auto;
+    }
+    .spot{
+        padding-top: 20px;
+        padding-bottom: 60px;
+        margin: 0 auto;
     }
   } 
 
   @media screen and  (max-width: 1023.98px){
-    div.wrapper{
+    div.wrap{
       width: 720px;
 	  margin: 0 auto;
     }
-	.map{
-		padding-right: 0;
-	}
+    div.p_img{
+        margin: 0 auto;
+    }
+    .spot{
+        padding-top: 20px;
+        padding-bottom: 60px;
+        margin: 0 auto;
+    }
+	
+  } 
+
+  @media screen and  (max-width: 900.98px){
+    div.wrap{
+      width: 720px;
+	  margin: 0 auto;
+      display: block;
+    }
+    div.p_img{
+        margin: 0 auto;
+    }
+    .spot{
+        padding-top: 20px;
+        padding-bottom: 60px;
+        margin: 0 auto;
+    }
+	
   } 
   
 @media screen and (max-width: 767.98px){
-    div.wrapper{
+    div.wrap{
       width: 500px;
 	  margin: 0 auto;
     }
-	.map{
-		padding-right: 0;
-	}
-
+    div.p_img{
+        margin: 0 auto;
+    }
+    .spot{
+        padding-top: 20px;
+        padding-bottom: 60px;
+        margin: 0 auto;
+    }
+	
   } 
 
 @media screen and (max-width: 575.98px){
-    div.wrapper{
+    div.wrap{
       width: 100%;
       margin: 0 auto;
     }
 
-	.map iframe{
-		width: 350px;
-		height: 250px;
-		margin: 0 auto;
-	}
-	.map{
-		padding-right: 0;
-	}
+
+    .spot p {
+    padding-left: 6px;
+    }
+
+    div.button{
+        display: inline;
+        margin: 0 auto;
+        padding-left: 12px;
+    }
+
+
+
+	
 
     footer p{
         font-size: 10px;
