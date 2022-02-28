@@ -119,39 +119,64 @@ body{
 }
 
 
-@media screen and (max-width: 575.98px){
+
+@media screen and  (max-width: 1279.98px){
     div.wrapper{
-      width: 100%;
-       margin: 0 auto; /*有了這個header banner就會在正確的位置 但img會跑位 */
-    }
-    .main{
-		padding: 0px;
-	}
-	.map{
-		padding: 0;
-	}
-  }
-  
-   @media screen and (min-width: 375px) and (max-width: 767.98px){
-    div.wrapper{
-      width: 540px;
+      width: 960px;
 	  margin: 0 auto;
     }
-	.main{
-		padding: 0px;
+  } 
+
+  @media screen and  (max-width: 1023.98px){
+    div.wrapper{
+      width: 720px;
+	  margin: 0 auto;
+    }
+	.map{
+		padding-right: 0;
+	}
+  } 
+  
+@media screen and (max-width: 767.98px){
+    div.wrapper{
+      width: 500px;
+	  margin: 0 auto;
+    }
+	.map{
+		padding-right: 0;
 	}
 
   } 
-  @media screen and (min-width: 768px) and (max-width: 1023.98px){
+
+@media screen and (max-width: 575.98px){
     div.wrapper{
-      width: 720px;
+      width: 100%;
+      margin: 0 auto;
     }
-	.main{
-		padding: 0px;
+
+	.map iframe{
+		width: 350px;
+		height: 250px;
+		margin: 0 auto;
 	}
-  } 
-   @media screen and (min-width: 1024px) and (max-width: 1279.98px){
-    div.wrap{er
-      width: 960px;
+	.map{
+		padding-right: 0;
+	}
+
+    footer p{
+        font-size: 3px;
+        line-height: 1.2;
     }
-  } 
+  }
+
+ 
+
+
+  
+  
+
+ 
+
+
+  
+  
