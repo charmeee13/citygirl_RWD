@@ -50,7 +50,7 @@
             <section>
                 <ul class="productdemo_sliders">
                     <li><a href="./product.html" target=“_blank”>
-                            <div class="wrap">
+                            <div class="img_wrap">
                                <img src="../img/instock/hot1.png" alt="">
                                <p class="mark">
                                    <span class="text">HOT</span>
@@ -60,7 +60,7 @@
                         </a>
                     </li>
                     <li><a href="./product.html" target=“_blank”>
-                            <div class="wrap">
+                            <div class="img_wrap">
                                 <img src="../img/instock/hot2.png" alt="">
                                 <p class="mark">
                                      <span class="text">HOT</span>
@@ -70,7 +70,7 @@
                         </a>
                     </li>
                     <li><a href="./product.html" target=“_blank”>
-                                <div class="wrap">
+                                <div class="img_wrap">
                                     <img src="../img/instock/hot3.png" alt="">
                                     <p class="mark">
                                         <span class="text">HOT</span>
@@ -80,7 +80,7 @@
                          </a>
                     </li>
                     <li><a href="./product.html" target=“_blank”>
-                                <div class="wrap">
+                                <div class="img_wrap">
                                     <img src="../img/instock/hot4.png" alt="">
                                     <p class="mark">
                                         <span class="text">HOT</span>
@@ -90,7 +90,7 @@
                         </a>
                     </li>
                     <li><a href="./product.html" target=“_blank”>
-                                <div class="wrap">
+                                <div class="img_wrap">
                                     <img src="../img/instock/hot5.png" alt="">
                                     <p class="mark">
                                         <span class="text">HOT</span>
@@ -100,7 +100,7 @@
                          </a>
                     </li>
                     <li><a href="./product.html" target=“_blank”>
-                                <div class="wrap">
+                                <div class="img_wrap">
                                     <img src="../img/instock/hot6.png" alt="">
                                     <p class="mark">
                                         <span class="text">HOT</span>
@@ -375,22 +375,49 @@
                     centerPadding: '100px',
                     slidesToShow: 4,
                     responsive: [
-                        {
-                        breakpoint: 768,
+                    {
+                        breakpoint: 1150,
                         settings: {
                             arrows: false,
                             centerMode: true,
-                            centerPadding: '40px',
+                            // centerPadding: '40px',
                             slidesToShow: 3
                         }
                         },
                         {
-                        breakpoint: 480,
+                        breakpoint: 900,
                         settings: {
                             arrows: false,
                             centerMode: true,
-                            centerPadding: '40px',
+                            // centerPadding: '40px',
+                            slidesToShow: 2
+                        }
+                        },
+                        {
+                        breakpoint: 680,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            // centerPadding: '40px',
+                            slidesToShow: 2
+                        }
+                        },
+                        {
+                        breakpoint: 580,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            // centerPadding: '40px',
                             slidesToShow: 1
+                        }
+                        },
+                        {
+                        breakpoint: 390,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            // centerPadding: '40px',
+                            slidesToShow: 0.5
                         }
                         }
                     ]   

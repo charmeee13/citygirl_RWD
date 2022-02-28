@@ -8,10 +8,17 @@
 body{
     font-family: 'Raleway', sans-serif;
 }
-/* 
+
 header{
     background-color: rgb(255, 255, 255,0.5);
-} */
+    z-index: 10;
+    /* 不佔位 */
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    
+} 
 
 
 
@@ -152,9 +159,16 @@ header{
     overflow: hidden;
 }
 
+.fullpage_img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 .fullpage_img1{
-    top: 0;
-    right: 0;
+    /* top: 0;
+    right: 0; */
     width: 100%;
     height: 100%;
     /* 盡量讓他置中 
@@ -169,13 +183,12 @@ header{
 .f1h{
     position: absolute;
     z-index: 9;
-    left:100px;
-    top:400px;
+    /* left:100px; */
+    /* top:400px; */
+    left: 10vw;
+    top: 25vw;
 }
 
-/* @media screen {
-    
-} */
 
 
 
@@ -193,8 +206,10 @@ width: 600px;
 .f2h{
     position: absolute;
     z-index: 9;
-    right:250px;
-    top:200px;
+    /* right:250px;
+    top:200px; */
+    right: 20vw;
+    top: 15vw;
 }
 
 .fullpage_img3{
@@ -211,9 +226,125 @@ width: 600px;
 .f3h{
     position: absolute;
     z-index: 9;
-    right:380px;
-    top: 160px;
+    /* right:380px;
+    top: 160px; */
+    right: 25vw;
+    top: 8vw;
 }
+
+
+
+        
+
+  
+  
+
+
+
+   @media screen and (min-width: 1024px) and (max-width: 1279.98px){
+    .f1h img{
+        width: 400px;
+    }
+    .f1h{
+        width: 300px;
+        left: 10vw;
+        top: 30vw; 
+    }
+
+    .f2h img{
+        width: 600px;
+        } 
+
+    .f3h img{
+        width: 300px;
+    }
+    
+  } 
+  @media screen and (min-width: 768px) and (max-width: 1023.98px){
+    .f1h img{
+        width: 300px;
+    }
+    .f1h{
+        width: 300px;
+        left: 10vw;
+        top: 40vw; 
+    }
+
+    .f2h img{
+        width: 400px;
+        }
+    .f2h{
+        width: 400px;
+        /* left: 40vw;
+        top: 30vw; */
+    }
+        
+    .f3h img{
+        width: 250px;
+    }
+    .f3h{
+        width: 250px;
+        /* left: 50vw;
+        top: 20vw;
+    } */
+
+  } 
+
+  @media screen and (min-width: 575.98px) and (max-width: 767.98px){
+    .f1h img{
+        width: 100px;
+    }
+    .f1h{
+        width: 200px;
+        left: 10vw;
+        top: 30vw; 
+    }
+
+
+    .f2h img{
+        width: 380px;
+        }
+
+    .f3h img{
+        width: 250px;
+    }
+    .f3h{
+        width: 250px;
+        /* left: 24vw;
+        top: 60vw; */
+    }
+  } 
+
+  @media screen and (max-width: 575.97px){
+    .f1h img{
+        width: 200px;
+    }
+    .f1h{
+        width: 200px;
+        left: 1vw;
+        top: 104vw;
+    }
+
+    .f2h img{
+        width: 350px;
+        }
+    .f2h{
+        width: 250px;
+        left: 4vw;
+        top: 65vw;
+    }
+    .f3h img{
+        width: 200px;
+    }
+    .f3h{
+        width: 200px;
+        left: 24vw;
+        top: 75vw;
+    }
+} 
+
+
+
 
 
 
