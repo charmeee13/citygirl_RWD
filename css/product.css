@@ -179,8 +179,12 @@ button.slick-next.slick-arrow{
 }
 
 .spot{
-    width: 400px;
+    width: 390px;
     height: 397px;
+}
+
+p{
+    text-align: center;
 }
 
 
