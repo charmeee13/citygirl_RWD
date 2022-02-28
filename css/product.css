@@ -190,29 +190,29 @@ button.slick-next.slick-arrow{
       width: 960px;
 	  margin: 0 auto;
     }
-    div.p_img{
+    /* div.p_img{
         margin: 0 auto;
     }
     .spot{
         padding-top: 20px;
         padding-bottom: 60px;
         margin: 0 auto;
-    }
+    } */
   } 
 
   @media screen and  (max-width: 1023.98px){
     div.wrap{
-      width: 720px;
+      width: 960px;
 	  margin: 0 auto;
     }
-    div.p_img{
+    /* div.p_img{
         margin: 0 auto;
     }
     .spot{
         padding-top: 20px;
         padding-bottom: 60px;
         margin: 0 auto;
-    }
+    } */
 	
   } 
 
@@ -229,7 +229,7 @@ button.slick-next.slick-arrow{
         padding-top: 20px;
         padding-bottom: 60px;
         margin: 0 auto;
-    }
+    } 
 	
   } 
   
@@ -237,6 +237,7 @@ button.slick-next.slick-arrow{
     div.wrap{
       width: 500px;
 	  margin: 0 auto;
+      display: block;
     }
     div.p_img{
         margin: 0 auto;
@@ -253,6 +254,7 @@ button.slick-next.slick-arrow{
     div.wrap{
       width: 100%;
       margin: 0 auto;
+      display: block;
     }
 
 
