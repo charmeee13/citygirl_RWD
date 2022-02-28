@@ -82,6 +82,7 @@ p{
 
 .qty{
     display: flex;
+    flex-wrap: wrap;
 	justify-content: center;
     align-items: center; 
 
@@ -134,23 +135,30 @@ button.slick-next.slick-arrow{
     display: none !important;
 }
 
+.img_wrap{
+    padding:5px;
+    position: relative;
+}
 .productdemo_sliders li img{
     height: 300px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    display: block;
 }
-
 
 .productdemo_sliders a{
     color: #000;
     text-decoration: none;
-    display: inline-block;
+    display: block;
     text-align: center; 
+
 }
+
 
 .productdemo_sliders li h2{
     padding-top: 15px;
-    padding-bottom: 30px;
-    padding-right: 20px; 
-    
+    padding-bottom: 20px;
 }
 
 /* slick end */
@@ -165,3 +173,51 @@ button.slick-next.slick-arrow{
     opacity: 1;
 }
 
+@media screen and  (max-width: 1279.98px){
+    div.wrapper{
+      width: 960px;
+	  margin: 0 auto;
+    }
+  } 
+
+  @media screen and  (max-width: 1023.98px){
+    div.wrapper{
+      width: 720px;
+	  margin: 0 auto;
+    }
+	.map{
+		padding-right: 0;
+	}
+  } 
+  
+@media screen and (max-width: 767.98px){
+    div.wrapper{
+      width: 500px;
+	  margin: 0 auto;
+    }
+	.map{
+		padding-right: 0;
+	}
+
+  } 
+
+@media screen and (max-width: 575.98px){
+    div.wrapper{
+      width: 100%;
+      margin: 0 auto;
+    }
+
+	.map iframe{
+		width: 350px;
+		height: 250px;
+		margin: 0 auto;
+	}
+	.map{
+		padding-right: 0;
+	}
+
+    footer p{
+        font-size: 10px;
+        line-height: 1.2;
+    }
+  }
