@@ -30,6 +30,7 @@ body{
 }
 
 .productdemo{
+    padding-top: 10px; 
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
@@ -122,6 +123,15 @@ nav ul > li:nth-child(4n){
     
     nav ul > li:nth-child(2n){
         margin-right: 0;
+    }
+
+
+    footer p{
+        font-size: 3px;
+        line-height: 1.2;
+        color: #000;
+        text-align: center;
+        padding-bottom: 20px; 
     }
   }
 
