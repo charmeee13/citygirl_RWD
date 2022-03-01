@@ -21,12 +21,19 @@ body{
     margin:0 auto;
 }
 
-.collection_demo{
+/* .collection_demo{
     display: flex;
     flex-wrap: wrap; 
     overflow: hidden;
-}
+} */
 
+/* @media screen and (max-width:600px) {
+
+    .collection_demo{
+        flex-direction: column;
+    }
+      
+  } */
 
 
 /*VOL hover效果*/
@@ -51,27 +58,27 @@ body{
 }
 
 /* 深入淺出 模糊hover */
-.collection_demo .move img{
+.ccollection_demoleft .move img{
     transition: 0.5s;
     opacity: 1;
 }
 
-.collection_demo .move img:hover{
+.collection_demoleft .move img:hover{
     opacity: 0.5;
     -webkit-filter:blur(1px);
 }  
 
-/* .collection_demo .move span {
+ .collection_demoleft .move span {
     transition: 0.5s;
     opacity: 1;
 }
 
-.collection_demo .move span:hover{
+.collection_demoleft .move span:hover{
     opacity: 0.5;
     -webkit-filter:blur(1px);
 }  */
 
-/* .img_group{
+ .img_group{
     transition: 0.5s;
     opacity: 1;
 }
@@ -79,66 +86,22 @@ body{
 .img_group:hover{
     opacity: 0.5;
     -webkit-filter:blur(1px);
-} */
+}
 
 /* end */
 
 
 
-.collection_demo img{
+.ccollection_demoleft img{
     /* display: block;
     text-align: center; */
     width: 400px;
-    padding-right: 20px;
+    /* padding-right: 20px;
     padding-left: 20px;
     padding-bottom: 20px;
-    padding-top: 20px; 
+    padding-top: 20px;  */
 }
 
-
-
-@media  (max-width:1200.98px) {
-  .collection_demoleft{
-    width: 800px;
-  }
-  .collection_demo{
-      /* flex-flow: column wrap; */
-  }
-} 
-
-@media (max-width: 767.98px) {
-  .collection_demoleft{
-    width: 600px;
-  }
-}
-
-@media (max-width: 575.98px) {
-  /* .waapper{
-    width: 400px;
-  } */
-  .collection_demoleft{
-    width: 400px ;
-    margin: 0 auto ;
-  }
-  .collection_demo{
-    width: 400px ;
-    margin: 0 auto;
-  }
-  .collection_demo img{
-    /* display: block;
-    text-align: center; */
-    width: 120px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px; 
-}
-
-.collection_demo > li:nth-child(2n){
-  margin-right: 0;
-}
-
-}
 
 
 .banner1 img{
@@ -222,7 +185,7 @@ body{
 /* 按鈕的hover效果 */
 
 
-@keyframes swing{
+/* @keyframes swing{
     15%{transform: translateX(5px);} 
     40%{transform: translateX(-5px);}
     65%{transform: translateX(2px);}
@@ -236,7 +199,7 @@ body{
 
 .f1h:hover{
     animation: swing 1s 1;
-}
+} */
 
 /* grid共用 */
 .grid-item {
@@ -283,6 +246,24 @@ body{
     grid-area: f;
       
 }
+
+.collection_demoleft .grid-container {
+    display: grid;
+    width: 1000px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "a b c" 
+    "d e f" 
+    "g h i"
+    "j k l";
+    
+    padding: 30px;
+    gap: 50px;
+}
+
+
 /* banner2 grid */
 
 .banner2 .grid-container {
@@ -434,7 +415,7 @@ body{
 
   @media  (max-width: 1023.98px){ 
     div.wrapper{
-      width: 800px ; 
+      width: 800px !important; 
       margin: 0 auto ;
     }
 
@@ -555,8 +536,8 @@ body{
   @media (max-width: 767.98px){
 
     .wrapper{
-        width: 600px ;
-        margin: 0 auto ;
+        width: 600px !important;
+        margin: 0 auto !important;
     }
 
     .banner2 .grid-container {
@@ -662,7 +643,7 @@ body{
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 300px;
+      height: 250px;
     }
     
 
@@ -673,8 +654,8 @@ body{
 
   @media (max-width: 575.98px){
     .wrapper{
-        width: 100% !important;
-        margin: 0 auto !important;
+        width: 100%;
+        margin: 0 auto;
     }
     .banner2 .grid-container {
         width: 350px;
@@ -781,10 +762,5 @@ body{
         justify-content: center;
         height: 200px;
       }
-
-      footer p{
-        font-size: 10px;
-        line-height: 1.2;
-    }
       
   }
