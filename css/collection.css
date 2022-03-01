@@ -397,8 +397,8 @@ body{
 
   @media  (max-width: 1023.98px){ 
     div.wrapper{
-      width: 800px !important; 
-      margin: 0 auto !important;
+      width: 800px ; 
+      margin: 0 auto ;
     }
 
     .banner2 .grid-container {
